@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <bean id="student1" class="com.example.spring_week_09.bean.Student">
+        <property name="id" value="1"/>
+        <property name="name" value="wwww"/>
+        <property name="age" value="12"/>
+    </bean>
+
+    <bean id="student2" class="com.example.spring_week_09.bean.Student">
+        <property name="id" value="2"/>
+        <property name="name" value="gggg"/>
+        <property name="age" value="13"/>
+    </bean>
+
+    <bean id="class_1" class="com.example.spring_week_09.bean.Klass">
+        <property name="classCode" value="11"/>
+        <property name="students">
+            <list>
+                <bean parent="student1"/>
+                <ref bean="student2"/>
+            </list>
+        </property>
+    </bean>
+
+
+</beans>
