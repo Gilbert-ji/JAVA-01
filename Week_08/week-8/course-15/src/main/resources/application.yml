@@ -1,0 +1,56 @@
+server:
+  port: 8088
+spring:
+  shardingsphere:
+    datasource:
+      names: ds0,ds1
+      common:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+      ds0:
+        jdbc-url: jdbc:mysql://localhost:3306/demo_ds_0?useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: biao123
+      ds1:
+        jdbc-url: jdbc:mysql://localhost:3306/demo_ds_1?useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: biao123
+    sharding:
+      binding-tables: t_order
+      default-database-strategy:
+        standard:
+          sharding-column: order_no
+          algorithm-expression: ds$->{order_no % 2}
+
+      tables:
+        t_order: #这里要对 order 表进行既分库又分表
+          actual-data-nodes: ds$->{0..1}.t_order_$->{0..15}
+          table-strategy:
+            inline:
+              sharding-column: order_no
+              algorithm-expression: t_order_$->{order_no % 16}
+          key-generator:
+            column: id
+            type: order_no
+#            props:
+#              worker:
+#                id: 123
+#              max:
+#                tolerate:
+#                  time:
+#                    difference:
+#                      milliseconds: 0
+    props:
+      sql.show: true
+mybatis:
+  mapper-locations: mapper/*.xml
+#          key-generator-cloumn-name: id #自动生成主键的列名
+#          actual-data-nodes: ds${0..1}.t_order_${0..15} #实际数据库的节点，对应于上面配置的数据源名称
+#          database-strategy: #分库策略
+#            inline:
+#              sharding-column: order_no
+#              algorithm-expression: ds${order_no % 2}
+#          table-strategy: #分表策略
+#            inline:
+#              sharding-column: order_no
+#              algorithm-expression: t_order_${order_no % 16}

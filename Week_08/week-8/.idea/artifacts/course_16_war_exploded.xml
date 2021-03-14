@@ -1,0 +1,128 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="course-16:war exploded">
+    <output-path>$PROJECT_DIR$/course-16/target/course-16-0.0.1-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>course-16</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="course-16" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.4.3" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.4.3" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.4.3" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.4.3" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.4.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.13.3" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.13.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.30" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.27" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-json:2.4.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.4" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.4.3" />
+          <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:3.4.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.4" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.1.4" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.6" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.6" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.23" />
+          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.4" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-jdbc-core-spring-boot-starter:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sharding-spring-boot-starter:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sharding-common:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-binder:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-parser:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sharding-api:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy:indy:2.4.19" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.15" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-shadow-spring-boot-starter:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-shadow-common:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-shadow-api:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-encrypt-spring-boot-starter:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-encrypt-common:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-encrypt-api:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-replica-query-spring-boot-starter:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-replica-query-common:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-replica-query-api:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-jdbc-spring-boot-starter-infra:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-jdbc-transaction-spring:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-transaction-core:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-jdbc-core:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-sql92:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-engine:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-spi:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-statement:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.2" />
+          <element id="library" level="project" name="Maven: org.antlr:antlr4-runtime:4.7.2" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-mysql:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-postgresql:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-oracle:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sql-parser-sqlserver:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-context:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-distsql-parser-engine:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-distsql-parser-statement:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sharding-route:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-route:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-system-datetime:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-datetime-spi:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-replica-query-route:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sharding-rewrite:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-encrypt-rewrite:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-shadow-rewrite:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-shadow-route:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-sharding-merge:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-merge:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-encrypt-merge:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:29.0-jre" />
+          <element id="library" level="project" name="Maven: com.google.guava:failureaccess:1.0.1" />
+          <element id="library" level="project" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.2" />
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:2.11.1" />
+          <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.3.4" />
+          <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.30" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-transaction-xa-core:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-transaction-xa-spi:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-transaction-xa-atomikos:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: com.atomikos:transactions:4.0.6" />
+          <element id="library" level="project" name="Maven: com.atomikos:transactions-api:4.0.6" />
+          <element id="library" level="project" name="Maven: com.atomikos:atomikos-util:4.0.6" />
+          <element id="library" level="project" name="Maven: com.atomikos:transactions-jta:4.0.6" />
+          <element id="library" level="project" name="Maven: com.atomikos:transactions-jdbc:4.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-executor:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-common:5.0.0-alpha" />
+          <element id="library" level="project" name="Maven: org.apache.shardingsphere:shardingsphere-infra-rewrite-engine:5.0.0-alpha" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/course-16/target/course-16-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="course-16/web/Web" />
+    </root>
+  </artifact>
+</component>

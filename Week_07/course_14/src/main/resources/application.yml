@@ -1,0 +1,20 @@
+server:
+  port: 8808
+spring:
+  datasource:
+    master:
+#      type: com.zaxxer.hikari.HikariDataSource
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3316/demo_master?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password:
+    slave:
+      type: com.alibaba.druid.pool.DruidDataSource
+#      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3316/demo_slave_0?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password:
+mybatis:
+  mapper-locations: mapper/*.xml
