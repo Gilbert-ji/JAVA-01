@@ -1,4 +1,4 @@
-package com.example.shardingsphere_demo.bean;
+package com.example.mybatis_demo.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

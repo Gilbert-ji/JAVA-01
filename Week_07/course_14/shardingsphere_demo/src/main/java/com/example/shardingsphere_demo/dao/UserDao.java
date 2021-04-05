@@ -1,6 +1,7 @@
 package com.example.shardingsphere_demo.dao;
 
 import com.example.shardingsphere_demo.bean.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -13,4 +14,6 @@ public interface UserDao {
     List<User> getAll();
 
     int insert(User user);
+
+    User findById(@Param("id") Integer id);
 }

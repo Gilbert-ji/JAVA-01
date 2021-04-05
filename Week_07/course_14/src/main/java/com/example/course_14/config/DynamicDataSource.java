@@ -25,8 +25,12 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
     private DataSource masterDataSource;
 
     @Autowired
-    @Qualifier("slaveDataSource")
-    private DataSource slaveDataSource;
+    @Qualifier("slaveDataSource1")
+    private DataSource slaveDataSource1;
+
+    @Autowired
+    @Qualifier("slaveDataSource2")
+    private DataSource slaveDataSource2;
 
     /**
      * 这个是主要的方法，返回的是生效的数据源名称
@@ -40,7 +44,8 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
     @Override
     public void afterPropertiesSet() {
         Map<Object,Object> map = new HashMap<>();
-        map.put("slaveDataSource",slaveDataSource);
+        map.put("slaveDataSource1",slaveDataSource1);
+        map.put("slaveDataSource2",slaveDataSource2);
         map.put("masterDataSource",masterDataSource);
         setTargetDataSources(map);
         setDefaultTargetDataSource(masterDataSource);

@@ -21,9 +21,15 @@ public class DataSourceConfig {
         return DataSourceBuilder.create().build();
     }
 
-    @Bean(name = "slaveDataSource")
-    @ConfigurationProperties(prefix = "spring.datasource.slave")
-    public DataSource slaveDataSource(){
+    @Bean(name = "slaveDataSource1")
+    @ConfigurationProperties(prefix = "spring.datasource.slave1")
+    public DataSource slaveDataSource1(){
+        return DataSourceBuilder.create().build();
+    }
+
+    @Bean(name = "slaveDataSource2")
+    @ConfigurationProperties(prefix = "spring.datasource.slave2")
+    public DataSource slaveDataSource2(){
         return DataSourceBuilder.create().build();
     }
 

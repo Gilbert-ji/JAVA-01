@@ -43,10 +43,12 @@ public class SwitchDataSource {
         String name = joinPoint.getSignature().getName();
         Method method = aClass.getMethod(name);
         String value = method.getAnnotation(MyDataSource.class).value();
-        if("master".equals(value)){
-            DataSourceContextHolder.setDbType("masterDataSource");
+        if("slave1".equals(value)){
+            DataSourceContextHolder.setDbType("slaveDataSource1");
+        } else if ("slave2".equals(value)) {
+            DataSourceContextHolder.setDbType("slaveDataSource2");
         } else {
-            DataSourceContextHolder.setDbType("slaveDataSource");
+            DataSourceContextHolder.setDbType("masterDataSource");
         }
     }
 

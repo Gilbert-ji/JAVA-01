@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://127.0.0.1:3316/demo_master?useUnicode=true&characterEncoding=utf-8&rewriteBatchedStatements=true
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password:
+    slave:
+      url: jdbc:mysql://127.0.0.1:3316/demo_slave_0?useUnicode=true&characterEncoding=utf-8&rewriteBatchedStatements=true
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password:

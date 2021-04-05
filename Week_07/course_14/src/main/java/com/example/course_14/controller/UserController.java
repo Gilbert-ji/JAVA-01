@@ -1,13 +1,13 @@
 package com.example.course_14.controller;
 
-import com.example.course_14.bean.User;
 import com.example.course_14.aop.MyDataSource;
+import com.example.course_14.bean.User;
 import com.example.course_14.dao.UserDao;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.Random;
 
 /**
@@ -19,7 +19,7 @@ import java.util.Random;
 @RequestMapping("/user")
 public class UserController {
 
-    @Autowired
+    @Resource
     private UserDao userDao;
 
     @GetMapping("/")
@@ -28,7 +28,7 @@ public class UserController {
     }
 
     @GetMapping("/getAll")
-    @MyDataSource(value = "slave")
+    @MyDataSource(value = "slave1")
     public Object getAll(){
         return userDao.getAll();
     }
