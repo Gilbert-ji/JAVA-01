@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9001,localhost:9002,localhost:9003
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: kafka-test
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
